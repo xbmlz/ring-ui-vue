@@ -1,6 +1,7 @@
 <template>
   <div class="">
     <RingButton>Hello World</RingButton>
+    <RingButton type="primary">Hello World</RingButton>
   </div>
 </template>
 

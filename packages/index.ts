@@ -2,6 +2,8 @@ import { App, Plugin } from 'vue'
 import RingButton from './components/button'
 import { InstallOptions } from './utils'
 
+import './theme/index.scss'
+
 const components: Record<string, Plugin> = {
   RingButton,
 }
