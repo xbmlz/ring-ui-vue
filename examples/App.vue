@@ -1,7 +1,7 @@
 <template>
-  <div class="">
-    <RingButton>Hello World</RingButton>
-    <RingButton type="primary">Hello World</RingButton>
+  <div class="buttons">
+    <RingButton>Default</RingButton>
+    <RingButton type="primary">Primary</RingButton>
   </div>
 </template>
 
@@ -13,4 +13,10 @@ export default { name: 'examples' }
 import { RingButton } from '../packages/index'
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.buttons {
+  button {
+    margin: 8px;
+  }
+}
+</style>

@@ -4,26 +4,49 @@ $button-shadow: inset 0 0 0 1px;
 .ring-btn {
   position: relative;
   display: inline-block;
-
   box-sizing: border-box;
   height: calc($unit * 3.5);
   margin: 0;
   padding: 0 calc($unit * 2);
-
   cursor: pointer;
   transition: color var(--ring-ease), background-color var(--ring-ease), box-shadow var(--ring-ease);
   text-decoration: none;
-
   color: var(--ring-text-color);
-
   border: 0;
   border-radius: var(--ring-border-radius);
   outline: 0;
   background-color: var(--ring-content-background-color);
   box-shadow: $button-shadow var(--ring-borders-color);
-
   font-family: var(--ring-font-family);
   font-size: var(--ring-font-size);
-
   line-height: calc($unit * 3.5);
+
+  &:hover {
+    transition: none;
+    box-shadow: $button-shadow var(--ring-border-hover-color);
+  }
+
+  &:active {
+    transition: none;
+    background-color: var(--ring-selected-background-color);
+    box-shadow: $button-shadow var(--ring-border-hover-color);
+  }
+}
+
+// primary
+.ring-btn-primary {
+  color: var(--ring-white-text-color);
+  background-color: var(--ring-main-color);
+  box-shadow: none;
+
+  &:hover {
+    transition: none;
+    background-color: var(--ring-main-hover-color);
+    box-shadow: none;
+  }
+
+  &:active {
+    background-color: var(--ring-button-primary-background-color);
+    box-shadow: $button-shadow var(--ring-button-primary-border-color);
+  }
 }
