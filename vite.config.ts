@@ -4,6 +4,7 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: resolve(__dirname, './examples'),
   plugins: [vue()],
   build: {
     lib: {

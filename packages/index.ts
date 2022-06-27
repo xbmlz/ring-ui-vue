@@ -12,3 +12,9 @@ const install = (app: App, options?: InstallOptions): void => {
     // TODO
   }
 }
+
+export { RingButton }
+
+export default {
+  install,
+}

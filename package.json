@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "peerDependencies": {
     "vue": "^3.2.37"
@@ -20,6 +23,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
+    "vitepress": "^1.0.0-alpha.4",
     "vue-tsc": "^0.34.7"
   }
 }
