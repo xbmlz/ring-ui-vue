@@ -1,4 +1,4 @@
-export type ButtonType = 'primary'
+export type ButtonType = 'primary' | 'danger'
 export type ButtonSize = 'large' | 'default' | 'small'
 
 export const ButtonEmits = {

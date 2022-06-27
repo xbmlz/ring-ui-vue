@@ -6,18 +6,20 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import './index.scss'
 import { ButtonEmits, ButtonSize, ButtonType } from './interface'
 
 export interface RingButtonProps {
   type?: ButtonType
   size?: ButtonSize
-  disabled?: string | boolean
+  disabled?: boolean | undefined
+  loading?: boolean | undefined
 }
 
 const props = withDefaults(defineProps<RingButtonProps>(), {
   disabled: false,
+  loading: false,
 })
 
 const emit = defineEmits(ButtonEmits)
@@ -29,9 +31,8 @@ const onClick = (event: MouseEvent) => {
 
 const classes = computed(() => {
   return [
-    {
-      'ring-btn-disabled': props.disabled,
-    },
+    props.disabled ? 'is-disabled' : '',
+    props.loading ? 'is-loading' : '',
     props.type ? `ring-btn-${props.type}` : '',
     props.size ? `ring-btn-${props.size}` : '',
   ]
@@ -39,7 +40,14 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <button class="ring-btn" :class="classes" @click="onClick">
+  <button
+    class="ring-btn"
+    :disabled="props.disabled"
+    :loading="props.loading"
+    :class="classes"
+    @click="onClick"
+  >
+    <div v-if="props.loading" class="loading-background"></div>
     <slot></slot>
   </button>
 </template>

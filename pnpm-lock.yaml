@@ -1,10 +1,9 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 importers:
 
   .:
     specifiers:
-      '@ring-ui-vue/components': workspace:*
       '@types/node': ^18.0.0
       '@vitejs/plugin-vue': ^2.3.3
       sass: ^1.53.0
@@ -14,7 +13,6 @@ importers:
       vue: ^3.2.37
       vue-tsc: ^0.34.7
     dependencies:
-      '@ring-ui-vue/components': link:packages/components
       vue: 3.2.37
     devDependencies:
       '@types/node': 18.0.0
@@ -24,9 +22,6 @@ importers:
       vite: 2.9.12_sass@1.53.0
       vitepress: 1.0.0-alpha.4_sass@1.53.0
       vue-tsc: 0.34.17_typescript@4.7.4
-
-  packages/components:
-    specifiers: {}
 
 packages:
 
