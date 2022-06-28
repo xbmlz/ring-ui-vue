@@ -24,6 +24,7 @@
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vitepress": "^1.0.0-alpha.4",
+    "vue-router": "4",
     "vue-tsc": "^0.34.7"
   }
 }
