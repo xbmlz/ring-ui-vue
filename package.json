@@ -6,25 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "preview": "vite preview"
   },
   "peerDependencies": {
     "vue": "^3.2.37"
   },
   "dependencies": {
+    "@ring-ui-vue/components": "workspace:*",
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "@vitejs/plugin-vue": "^2.3.3",
-    "sass": "^1.53.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
-    "vitepress": "^1.0.0-alpha.4",
-    "vue-router": "4",
     "vue-tsc": "^0.34.7"
   }
 }

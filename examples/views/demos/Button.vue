@@ -1,13 +1,15 @@
 <template>
-  <div class=""></div>
+  <div class="buttons">
+    <RingButton>Default</RingButton>
+  </div>
 </template>
 
 <script lang="ts">
-export default { name: '' }
+export default { name: 'demo-button' }
 </script>
 
 <script setup lang="ts">
-import {} from 'vue'
+import { RingButton } from '../../../packages/index'
 </script>
 
 <style scoped></style>

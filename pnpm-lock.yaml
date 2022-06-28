@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@jetbrains/icons': ^3.19.1
       '@types/node': ^18.0.0
       '@vitejs/plugin-vue': ^2.3.3
       sass: ^1.53.0
@@ -16,6 +17,7 @@ importers:
     dependencies:
       vue: 3.2.37
     devDependencies:
+      '@jetbrains/icons': 3.19.1
       '@types/node': 18.0.0
       '@vitejs/plugin-vue': 2.3.3_vite@2.9.12+vue@3.2.37
       sass: 1.53.0
@@ -170,6 +172,10 @@ packages:
       '@algolia/autocomplete-core': 1.6.3
       '@docsearch/css': 3.1.0
       algoliasearch: 4.13.1
+    dev: true
+
+  /@jetbrains/icons/3.19.1:
+    resolution: {integrity: sha512-wFtZyRdv+pNWOrl+/8Jfz/gdnRHrlZnId5i1VA6CESHZsbUS0QQ54Jwyhjrx4mg+eiBjegHNDIHrvC5s1aHacQ==}
     dev: true
 
   /@types/node/18.0.0:

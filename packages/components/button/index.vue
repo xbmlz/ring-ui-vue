@@ -1,4 +1,3 @@
-<!-- done -->
 <script lang="ts">
 export default {
   name: 'RingButton',
@@ -6,7 +5,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import './index.scss'
 import { ButtonEmits, ButtonSize, ButtonType } from './interface'
 

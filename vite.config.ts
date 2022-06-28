@@ -4,12 +4,12 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  root: resolve(__dirname, './examples'),
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'packages/index.ts'),
+      entry: resolve(__dirname, './packages/index.ts'),
       name: 'ring-ui-vue',
+      formats: ['es'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
